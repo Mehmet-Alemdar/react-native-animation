@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { View, Text, FlatList, Image, Dimensions, StyleSheet } from 'react-native';
 import { REACT_APP_PEXELS_API_KEY, REACT_APP_PEXELS_API_URL } from '@env';
-import { faker, he } from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import { MaterialCommunityIcons, FontAwesome5, Feather, Octicons } from '@expo/vector-icons'; 
 import { LinearGradient } from 'expo-linear-gradient';
 
