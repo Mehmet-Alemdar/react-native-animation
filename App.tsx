@@ -8,20 +8,14 @@ import Switch from './src/components/switch';
 import GalleryView from './src/components/galleryView';
 import ImageFocus from './src/components/imageFocusing';
 import InstagramPost from './src/components/instagram/instagramPost/instagramPost';
+import ListComponent from './src/components/list';
 
 export default function App() {
   // for Switch component
   const [isActive, setIsActive] = React.useState(false)
-
   return (
     <View style={styles.container}>
-      <Switch 
-        size={60} 
-        onPress={() => {
-          setIsActive((isActive) => !isActive)
-        }} 
-        isActive={isActive}
-      />
+      <ListComponent />
       <StatusBar style="auto" />
     </View>
   );
@@ -30,7 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3f3f4',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
