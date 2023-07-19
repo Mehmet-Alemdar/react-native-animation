@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react'
 import { SafeAreaView ,View, Text, TouchableOpacity, TextInput, StyleSheet, FlatList } from 'react-native'
-import Animated,{ Layout, ZoomInEasyUp, ZoomInRight, ZoomOutLeft } from 'react-native-reanimated'
+import Animated,{ Layout, ZoomInRight, ZoomOutLeft } from 'react-native-reanimated'
 import { Swipeable } from 'react-native-gesture-handler';
 
-const ListCard = ({note, index, handleDelete, handleUpdate}) => {
+const ListCard = ({note, index, handleDelete}) => {
     const renderRightActions = () => (
       <TouchableOpacity style={[styles.cardBox, styles.deleteButton]} onPress={() => handleDelete(index)}>
         <Text style={styles.deleteButtonText}>Delete</Text>
